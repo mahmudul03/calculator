@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="img/1.png" type="image/x-icon">
+    <title>Calculetor </title>
+
+</head>
+<body>
+    <div class="bg-emerald-400">
+         
+        
+        <section class=" md:flex  items-center justify-center py-5 text-white">
+            <div class="bg-slate-500 w-auto md:grid gap-4 rounded-2xl items-center justify-center p-5 my-8  mx-3">
+    
+                <div class="flex overflow-hidden justify-end p-5  bg-green-100 rounded-lg shadow-inner shadow-black mb-5">
+                    <h2 id="display" class="text-3xl text-black h-12 "></h2>
+                </div>
+    
+                <div class="w-full grid grid-cols-4 justify-center p-5 gap-2 md:gap-4 rounded-lg shadow-inner shadow-black">
+                    <button class=" rounded-lg bg-[#F48FB1] text-lg font-bold text-white shadow-lg shadow-black" onclick="document.getElementById('display').innerText=' '">AC</button>
+                    <button class="rounded-lg bg-[#F48FB1] text-lg font-bold text-white shadow-lg shadow-black"onclick="document.getElementById('display').innerText=document.getElementById('display').innerText.slice('0',-1)">DE</button>
+                    <button class="btn btn-primary text-lg font-bold text-white shadow-lg shadow-black" onclick="document.getElementById('display').innerText+='.'">.</button>
+                    <button class="btn btn-primary text-lg font-bold text-white shadow-lg shadow-black" onclick="document.getElementById('display').innerText+='/'">/</button>
+                    <button class="btn btn-primary text-lg font-bold text-white shadow-lg shadow-black" onclick="document.getElementById('display').innerText+='7'">7</button>
+                    <button class="btn btn-primary text-lg flex-bold text-white shadow-lg shadow-black" onclick="document.getElementById('display').innerText+='8'">8</button>
+                    <button class="btn btn-primary text-lg flex-bold text-white shadow-lg shadow-black" onclick="document.getElementById('display').innerText+='9'">9</button>
+                    <button class="btn btn-primary text-lg flex-bold text-white shadow-lg shadow-black" onclick="document.getElementById('display').innerText+='*'">X</button>
+                    <button class="btn btn-primary text-lg flex-bold text-white shadow-lg shadow-black" onclick="document.getElementById('display').innerText+='4'">4</button>
+                    <button class="btn btn-primary text-lg flex-bold text-white shadow-lg shadow-black" onclick="document.getElementById('display').innerText+='5'">5</button>
+                    <button class="btn btn-primary text-lg flex-bold text-white shadow-lg shadow-black" onclick="document.getElementById('display').innerText+='6'">6</button>
+                    <button class="btn btn-primary text-lg flex-bold text-white shadow-lg shadow-black" onclick="document.getElementById('display').innerText+='-'">-</button>
+                    <button class="btn btn-primary text-lg flex-bold text-white shadow-lg shadow-black" onclick="document.getElementById('display').innerText+='1'">1</button>
+                    <button class="btn btn-primary text-lg flex-bold text-white shadow-lg shadow-black" onclick="document.getElementById('display').innerText+='2'">2</button>
+                    <button class="btn btn-primary text-lg flex-bold text-white shadow-lg shadow-black" onclick="document.getElementById('display').innerText+='3'">3</button>
+                    <button class="btn btn-primary text-lg flex-bold text-white shadow-lg shadow-black" onclick="document.getElementById('display').innerText+='+'">+</button>
+                    <button class="btn btn-primary text-lg flex-bold text-white shadow-lg shadow-black" onclick="document.getElementById('display').innerText+='00'">00</button>
+                    <button class="btn btn-primary text-lg flex-bold text-white shadow-lg shadow-black" onclick="document.getElementById('display').innerText+='0'">0</button>
+                    <button class="rounded-lg bg-[#F48FB1] text-3xl font-bold text-white shadow-lg shadow-black col-span-2" onclick="document.getElementById('display').innerText=eval(document.getElementById('display').innerText)">=</button> 
+                    
+
+                     
+                </div>
+    
+    
+            </div>
+        </section>
+     
+    </div>
+</body>
+</html>
